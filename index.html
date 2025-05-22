@@ -406,6 +406,63 @@
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
         }
 
+        /* Education Section */
+        #education {
+            background-color: #1e293b;
+            padding: 5rem 2rem;
+        }
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .education-card {
+            background: #0f172a;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid #334155;
+        }
+
+        .education-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .education-card h3 {
+            color: #60a5fa;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .education-card p {
+            color: #94a3b8;
+            margin-bottom: 0.5rem;
+        }
+
+        .education-card .degree {
+            color: #e2e8f0;
+            font-weight: 500;
+        }
+
+        .education-card .score {
+            color: #60a5fa;
+            font-weight: 600;
+        }
+
+        .education-card .location {
+            font-style: italic;
+        }
+
+        .education-card .duration {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .nav-links {
@@ -467,6 +524,10 @@
                 width: 90%;
                 text-align: center;
                 margin: 1rem auto;
+            }
+
+            .education-grid {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -530,6 +591,7 @@
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
+                <a href="#education">Education</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
@@ -556,6 +618,34 @@
     <section id="about">
         <h2 class="section-title">About Me</h2>
         <p>As an enthusiastic Computer Science graduate, there's a strong eagerness to contribute skills and passion to a dynamic team. The academic background includes coursework in data structures, algorithms, and software development, complemented by hands-on experience through personal projects. Thriving in collaborative environments, there is a commitment to continuous learning. The goal is to leverage technical abilities to create innovative solutions and drive positive impact.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+            <div class="education-card">
+                <h3>VelTech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology</h3>
+                <p class="degree">BTECH/Computer Science and Engineering with AIML Specialization</p>
+                <p class="score">CGPA: 8.01</p>
+                <p class="location">Chennai, Tamil Nadu</p>
+                <p class="duration">2021 - 2025</p>
+            </div>
+            <div class="education-card">
+                <h3>Sasi New Gen Junior College</h3>
+                <p class="degree">12th Grade</p>
+                <p class="score">Percentage: 97.4 (Grand Total: 974)</p>
+                <p class="location">Velivennu, Andhra Pradesh</p>
+                <p class="duration">2019 - 2021</p>
+            </div>
+            <div class="education-card">
+                <h3>Vidya Vikas English Medium High School</h3>
+                <p class="degree">SSC</p>
+                <p class="score">GPA: 10.0</p>
+                <p class="location">Jangareddygudem, Andhra Pradesh</p>
+                <p class="duration">2018 - 2019</p>
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
